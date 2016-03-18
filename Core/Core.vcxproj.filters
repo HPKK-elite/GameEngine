@@ -1,33 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Файлы исходного кода">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Заголовочные файлы">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
-    <Filter Include="Файлы ресурсов">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="ReadMe.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="stdafx.h">
-      <Filter>Заголовочные файлы</Filter>
-    </ClInclude>
-    <ClInclude Include="targetver.h">
-      <Filter>Заголовочные файлы</Filter>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Log.h">
+      <Filter>Logging Subsystem</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="stdafx.cpp">
-      <Filter>Файлы исходного кода</Filter>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="Log.cpp">
+      <Filter>Logging Subsystem</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Window Subsystem">
+      <UniqueIdentifier>{c894c989-b0b1-4603-8115-479382327d30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Abstract Components">
+      <UniqueIdentifier>{db8ec2fc-fe5b-4e64-ba76-1d1f94d7f942}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logging Subsystem">
+      <UniqueIdentifier>{bc5edb23-1df7-4ebb-b75c-02a39ab37efd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math Subsystem">
+      <UniqueIdentifier>{dd42c53f-43b8-4d43-b7b6-b763b16b28d3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>

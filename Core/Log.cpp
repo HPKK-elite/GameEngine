@@ -7,7 +7,7 @@ namespace EngineCore
 	//-------Констурктор класса----------//
 	Log::Log()
 	{
-		if (!m_instance)
+		/*if (!m_instance)
 		{
 			m_file = nullptr;
 			m_instance = this;
@@ -15,13 +15,14 @@ namespace EngineCore
 		}
 		else
 			Err("Log has been created");
+			*/
 	}
 
 
 	Log::~Log()
 	{
 		m_close();
-		m_instance = nullptr;
+		//m_instance = nullptr;
 	}
 
 

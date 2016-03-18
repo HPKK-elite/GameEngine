@@ -8,18 +8,18 @@ namespace EngineCore
 			Log();
 			~Log();
 
-			static Log* Get() { return m_instance; }
+			//static Log* Get() { return m_instance; }
 
-			void Print(const char *message);
-			void Debug(const char *message);
-			void Err(const char *message);
+			static void Print(const char *message);
+			static void Debug(const char *message);
+			static void Err(const char *message);
 	private:
-		static Log *m_instance;
+		//static Log *m_instance;
 
-		void m_init();
-		void m_close();
-		void m_print(const char *levText, const char *text);
-		FILE *m_file;
+		static void m_init();
+		static void m_close();
+		static void m_print(const char *levText, const char *text);
+		static FILE *m_file;
 	};
 }
 
